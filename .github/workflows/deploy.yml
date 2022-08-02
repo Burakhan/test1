@@ -30,8 +30,8 @@ jobs:
       run: |
         [ -d  test2/test1 ] && rm -rf test2/test1
         cp -r repo/* test2/test1
-        ls test2
-        ls test2/test1
+        ls  -al  test2
+        ls -al test2/test1
 
     - name: Commit files
       run: |
