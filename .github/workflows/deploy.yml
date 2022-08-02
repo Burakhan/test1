@@ -15,16 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-          path: repo
+      with:
+        ref: ${{ github.head_ref }}
+        fetch-depth: 0
+        path: repo
     
     - uses: actions/checkout@v3
-        with:
-          repository: Burakhan/test2
-          fetch-depth: 0
-          path: test2
+      with:
+        repository: Burakhan/test2
+        fetch-depth: 0
+        path: test2
 
     - name: Change dir
       run: |
