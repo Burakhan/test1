@@ -45,5 +45,6 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
+        ssh: true
         github_token: ${{ secrets.REPO_TOKEN }}
         force_with_lease: true
