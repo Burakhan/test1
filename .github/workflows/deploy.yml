@@ -30,7 +30,7 @@ jobs:
       run: |
         [ -d  test2/test1 ] && rm -rf test2/test1
         mkdir test2/test1
-        cp -r repo/ test2/test1
+        cp -r repo/build test2/test1
         ls  -al repo
         ls  -al test2
         ls -al test2/test1
@@ -40,6 +40,7 @@ jobs:
         cd test2
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        git add test1/
         git commit -m "Add changes" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
