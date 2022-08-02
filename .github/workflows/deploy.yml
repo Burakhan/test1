@@ -48,6 +48,17 @@ jobs:
         git config user.name "github-actions[bot]"
         git add test1/
         git commit -m "Add changes" -a
+    
+    - name: Pushes to another repository
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.REPO_TOKEN }}
+      with:
+        source-directory: 'test2'
+        destination-github-username: 'bot'
+        destination-repository-name: 'Burakhan/test2'
+        user-email: carles3@pina.cat
+        target-branch: main
       
     - name: Push changes
       uses: ad-m/github-push-action@master
