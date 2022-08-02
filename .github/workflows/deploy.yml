@@ -55,8 +55,8 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.REPO_TOKEN }}
       with:
         source-directory: 'test2'
-        destination-github-username: 'bot'
-        destination-repository-name: 'Burakhan/test2'
+        destination-github-username: 'Burakhan'
+        destination-repository-name: 'test2'
         user-email: carles3@pina.cat
         target-branch: main
       
