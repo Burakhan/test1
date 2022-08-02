@@ -30,7 +30,7 @@ jobs:
       run: |
         [ -d  test2/test1 ] && rm -rf test2/test1
         mkdir test2/test1
-        cp -r repo test2/test1/
+        cp -r repo/ test2/test1
         ls  -al repo
         ls  -al test2
         ls -al test2/test1
