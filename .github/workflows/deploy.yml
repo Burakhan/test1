@@ -50,7 +50,6 @@ jobs:
         git config user.name "github-actions[bot]"
         git add test1/
         git commit -m "Add changes" -a
-        git push
     
     - name: Pushes to another repository
       uses: cpina/github-action-push-to-another-repository@main
